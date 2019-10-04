@@ -17,6 +17,30 @@ set wrap linebreak
 set nocompatible
 let mapleader = ","
 
+""""""""""""""""""""""""""""""""""""""""
+
+map <PageUp> <C-U><C-U>
+map <PageDown> <C-D><C-D>
+imap <PageUp> <C-O><C-U><C-O><C-U>
+imap <PageDown> <C-O><C-D><C-O><C-D>
+
+let g:ycm_autoclose_preview_window_after_insertion = 1
+let g:ycm_autoclose_preview_window_after_completion = 1
+
+map <PageUp> <C-U><C-U>
+map <PageDown> <C-D><C-D>
+imap <PageUp> <C-O><C-U><C-O><C-U>
+imap <PageDown> <C-O><C-D><C-O><C-D>
+
+:set ignorecase
+:set smartcase
+
+set nostartofline
+
+"""""""""""""""""""""""""""""""""""""""""""""
+
+
+
 " allow scrolling in vim
 set mouse=a
 
@@ -303,10 +327,10 @@ cnoremap jk <ESC>
 set timeoutlen=300
 
 " switch semi-colon and colon
-nnoremap ; :
-vnoremap ; :
-nnoremap : ;
-vnoremap : ;
+"nnoremap ; :
+"vnoremap ; :
+"nnoremap : ;
+"vnoremap : ;
 
 " insert the very magic reg-ex mode every time
 set hlsearch incsearch
